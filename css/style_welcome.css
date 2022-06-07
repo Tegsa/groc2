@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Gabriola;
+}
+body{
+    text-align: center;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background: #301934;
+    width:100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo img{
+    width: 180px;
+    height: 98px;
+
+}
+ul{
+    float: right;
+    line-height: 100px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:black;
+
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image:linear-gradient(rgba(233, 221, 221, 0.5),rgba(245, 229, 229, 0.5)), url(images/grocery.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner h1{
+    padding-top: 8%;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 450px;
+    background-image:url(images/bg3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.content h2{
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+.content p{
+    padding: 2% 0;
+    font-family: merienda;
+    line-height: 30px;
+}
+.gallery{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 450px;
+}
+.gallery figure{
+    width: 200%;
+    height: 500px;
+    position: relative;
+    animation: 20s slider infinite ;
+
+}
+.gallery figure img{
+    float:left;
+    width: 25%;
+    height: 500px;
+   
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -25%;
+    }
+    45%{
+        left: -25%;
+    }
+    50%{
+        left: -50%;
+    }
+    70%{
+        left: -50%;
+    }
+    75%{
+        left: -75%;
+    }
+    95%{
+        left: -75%;
+    }
+    100%{
+        left: -100%;
+       
+    }
+
+}
+
+.gallery img:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.6s;
+}
+
+.testimonials{
+    width: 100%;
+    height: 1600px;
+    position: relative;
+    top: 450px;
+    background-image:url(images/bg2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.testimonials h3{
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+
+}
+.testimonials img{
+    float: left;
+    width: 300px;
+    height: 300px;
+
+}
+.right img{
+    float: right;
+    width: 300px;
+    height: 300px;
+
+}
+.testimonials img:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.6s;
+}
+.testimonials p{
+    padding: 2% 0;
+    font-size: 30px;
+    line-height: 30px;
+}
+.footer{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: 450px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/grocery.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.footer p{
+    padding: 2% 0;
+    color:white;
+    font-size: 30px;
+    word-spacing: 60px;
+    line-height: 30px; 
+}
+.footer img{
+    float: center;
+    width: 300px;
+    height: 300px;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 30px;    
+    border: 3px solid transparent;
+    transition: 0.6s ease;
+}
+.footer a:hover{
+    background-color: #fff;
+    color:black;
+
+}

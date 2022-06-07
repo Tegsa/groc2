@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['USER_LOGIN']);
+unset($_SESSION['USER_EMAIL']);
+unset($_SESSION['USER_REGISTER']);
+unset($_SESSION['MESSAGE']);
+header('location:login.php');
+die();
+?>

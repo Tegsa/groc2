@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Arial;
+}
+body{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background-image: url(images/bg7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 450px){
+    body{
+        padding: 15px;
+    }
+}
+.register{
+    width: 55%;
+    height: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff30;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 10px;
+    box-shadow: 0 10px;
+    padding: 40px;
+    overflow: hidden;
+    
+}
+.register h1{
+    color: black;
+    font-size: 3em;
+    margin-bottom: 40px;
+    position: relative;
+}
+.register input[type="text"],input[type="email"],input[type="password"],textarea{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #ffffff30;
+    background-color: #ffffff30;
+    color: black;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.register p{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #ffffff30;
+    background-color: #ffffff30;
+    color: black;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.register p input[type="radio"]{
+    width: 15%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    clear: none;
+    margin: 10px 0 0 10px;
+    
+}
+.register p label {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  
+.register input:focus{
+    border-color: #ffffff;
+    transition: 0.4s;
+}
+.register textarea::placeholder,input::placeholder{
+    color: black;
+    letter-spacing: 1px;
+}
+.register input:focus::placeholder{
+    opacity: 0;
+}
+.register button{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #303e5c;
+    box-shadow: 0 10px 20px #303e5c69 ;
+    cursor: pointer;
+}
+.message p{
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
